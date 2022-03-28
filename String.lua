@@ -1,12 +1,12 @@
 -- -- NOTE: String
 -- -- 單引號和雙引號之間都是 String
 -- -- [[ 與 ]] 之間也是 String
-string1 = "Lua"
+local string1 = "Lua"
 print("\"字串 1 是\"",string1)
-string2 = 'Google.com'
+local string2 = 'Google.com'
 print("字串 2 是",string2)
 
-string3 = [[Lua 教學]]
+local string3 = [[Lua 教學]]
 print("字串 3 是",string3)
 
 
@@ -91,15 +91,15 @@ print(string.match("I have 2 questions for you.",123))
 
 string1 = "Lua"
 string2 = "Tutorial"
-number1 = 10
-number2 = 20
+local number1 = 10
+local number2 = 20
 print(string.format("基本格式化 %s %s",string1,string2))
-date = 25; month = 3; year = 2022
+local date = 25; local month = 3; local year = 2022
 print(string.format("日期格式化 %02d/%02d/%03d", date, month, year))
 print(string.format("%.4f",1/3))
 
 
-s = "Deadline is 30/05/1999, firm"
+local s = "Deadline is 30/05/1999, firm"
 date = "%d%d/%d%d/%d%d%d%d"
 print(string.sub(s, string.find(s, date)))
 
